@@ -1,18 +1,18 @@
 #!/bin/bash
 
-tag=$1
-dst=$2
+version=$1
+dest=$2
 
-git clone --recurse-submodules https://gerrit.googlesource.com/gerrit -b v"$tag" --depth 1 "$dst"
+git clone --recurse-submodules https://gerrit.googlesource.com/gerrit -b v"$version" --depth 1 "$dest"
 
 #git clone --recurse-submodules https://gerrit.googlesource.com/gerrit --depth 1
-#pushd $dst || exit
+#pushd $dest || exit
 #git checkout master
 #git pull origin master
 #git pull -t origin master
 #git submodule foreach git checkout master
 #git submodule foreach git pull origin master
 #git submodule foreach git pull -t origin master
-#git checkout tags/v$tag -b $tag
-#git submodule foreach git checkout tags/v$tag -b $tag
+#git checkout tags/v$version -b $version
+#git submodule foreach git checkout tags/v$version -b $version
 #popd || exit

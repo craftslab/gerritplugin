@@ -31,6 +31,7 @@
 
 ```bash
 ./script/download.sh 3.3.3 /path/to/source
+cp -r plugins/* /path/to/source/plugins/
 ```
 
 
