@@ -15,8 +15,8 @@ jobs:
         run: ./script/install.sh
         continue-on-error: false
       - name: Download source
-        run: ./script/download.sh 3.3.3 gerrit
+        run: ./script/download.sh 3.3.3 gerrit; cp -r plugins/* gerrit/plugins/
         continue-on-error: false
       - name: Build plugins
-        run: ./script/build.sh plugins 3.3.3 gerrit
+        run: ./script/build.sh gerrit plugins 3.3.3
         continue-on-error: false
