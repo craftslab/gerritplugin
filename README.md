@@ -40,7 +40,7 @@
 - Build Gerrit (optional)
 
 ```bash
-./script/build.sh gerrit 3.3.3 /path/to/source
+./script/build.sh /path/to/source gerrit 3.3.3
 ```
 
 
@@ -48,7 +48,7 @@
 - Build plugins
 
 ```bash
-./script/build.sh plugins 3.3.3 /path/to/source
+./script/build.sh /path/to/source plugins 3.3.3
 ```
 
 
@@ -57,6 +57,7 @@
 
 ```bash
 cp /path/to/source/bazel-bin/plugins/patchset-weblinks/patchset-weblinks.jar /path/to/install/plugins/
+
 /path/to/install/bin/gerrit.sh restart
 ```
 
